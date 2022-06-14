@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Domaine de Shadow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Rochester&family=Satisfy&family=Spectral+SC:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="jschien.css" type="text/css" rel="stylesheet">
+  <meta charset="UTF-8">
+	<script src="../resources/JS/chienxml.js"></script>
+	<script src="../resources/JS/chienxsl.js"></script>
+	<script src="../resources/JS/xslttransform.js"></script>
+	<script>
+		function loadXslt(){
+			insertXsl(chienxml, chien, 'chienliste');
+		}
+	</script>
+</head>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Accueil</a></li>
+      <li><a href="./origines.html">Le Bouvier Bernois</a></li>
+      <li><a href="./Chiens.html">Chiens</a></li>
+      <li><a href="./Chiots.html">Chiots</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<body onload="loadXslt()">
+    <h1 class="title">Nos Chiens</h1>
+    <div id="chienliste"></div>
+</body>
+<footer>
+    <div id="pied"> 
+      <p><a href="./index.html" title="du Domaine De Léon De La Seille" class="affixe">Domaine de Shadow</a></p>
+      <p class="siret">élevage du Domaine De Shadow - SIREN : *******<br>Les textes et les images sont la propriété exclusive de ce site - Reproduction interdite</p>
+      </p> 
+    </div>        
+</footer>
+</html>

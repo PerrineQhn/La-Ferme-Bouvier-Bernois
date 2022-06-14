@@ -1,0 +1,139 @@
+body{
+    background-color: #F3E9DC;
+}
+
+.tt{
+    display: block;
+    border: 1px dotted #895737;
+    top: 50px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+table {
+    border: none;
+    width: 1000px;
+}
+
+table tr {
+    display: flex;
+    margin-bottom: 10px;
+    width: 1000px;
+}
+
+
+tr.nom{
+    display: flex;
+    height: auto;
+}
+
+tr.nom th{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+tr.parents th{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+
+td.photo{
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    display: flex;
+}
+
+td.photo img{
+    display: flex;
+}
+
+tr.titre th{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+tr.donnees td{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+tbody {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+img {
+    margin: auto;
+    border: 2px solid #895737;
+    border-radius: 25%;
+}
+
+
+.title{
+    text-decoration-style: double;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+div.chiot{
+    border-radius: 25px;
+}
+
+div.chiot img{
+    width: 90%;
+    height: auto;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+div.chiot td{
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 0;
+}
+
+.sstitre{
+    display: flex;
+    margin-top: 0px;
+    border-radius: 25px;
+}
+
+h2{
+    font-family: 'Rochester', sans-serif;
+    font-size: 30px;
+    display: flex;
+    height: 30px;
+    color: #895737;
+    margin-top: 50px;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+h3{
+    font-family: 'Rochester', sans-serif;
+    font-size: 25px;
+    display: flex;
+    height: 30px;
+    color: #895737;
+    justify-content: center;
+    text-decoration: underline;
+}
+

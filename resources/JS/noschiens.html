@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="chienxml.js"></script>
+	<script src="chienxsl.js"></script>
+	<script src="xslttransform.js"></script>
+	<script>
+		function loadXslt(){
+			insertXsl(chienxml, chien, 'chienliste');
+		}
+	</script>
+	<style>
+		table {
+			border: none;
+			border-collapse: collapse;
+			width: 1000px;
+		}
+
+		table tr td {
+			border: none;
+			width: 400px;
+			height: auto;
+			display: block;
+			margin-left: 20px;
+		}
+
+		tr {
+			display: inline-block;
+		}
+
+		tbody {
+			display: flex;
+   		 	width: 1000px;
+    		align-items: flex-start;
+    		flex-wrap: wrap;
+		}
+	</style>
+	</head>
+	<body onload="loadXslt()">
+		<h1>Nos Chiens</h1>
+		<div id="chienliste"></div>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+p{
+	display: block;
+	width: 100%;
+}
+
+.title{
+    text-decoration-style: double;
+    text-decoration: underline;
+}
+
+h2{
+    font-family: 'Rochester', sans-serif;
+    font-size: 30px;
+    display: flex;
+    height: 30px;
+    color: #895737;
+    margin-top: 50px;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.contact h2{
+	display: flex;
+	flex-direction: column;
+}
+
+strong{
+	display: contents;
+}
+
+.contact {
+	width: 1000px;
+	height: auto;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.contact table{
+	justify-content: center;
+	margin: auto;
+}
+
+
+div.iframe{
+	width: 600px;
+	height: auto;
+	margin-right: 35px;
+}
+
+iframe{
+	margin-right: 35px;
+	width: auto;
+	height: 350px;
+	border: 1px solid #895737;
+	border-radius: 25px;
+	margin-bottom: 30px;
+}
+
+.contact a {
+	text-decoration: underline;
+}
+
+div.contact a:hover{
+	text-decoration: none;
+}
+
+div.contact tr th{
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-left: none;
+	border-right: none;
+	border: 1px solid #F3E9DC;
+	border-radius: 25px;
+}
+
+div.contact tr td{
+	width: 200px;
+	border-left: none;
+	border-right: none;
+	border: none;
+}
+.material-icons-outlined {
+	font-family: 'Material Icons';
+	font-weight: normal;
+  	font-style: normal;
+	font-size: 30px;
+	color: whitesmoke;
+	display: flex;
+  	line-height: 0;
+  	text-transform: none;
+  	letter-spacing: normal;
+  	word-wrap: normal;
+  	white-space: nowrap;
+  	direction: ltr;
+	justify-content: center;
+}
