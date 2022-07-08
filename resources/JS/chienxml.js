@@ -2,7 +2,6 @@ parser = new DOMParser();
 chienxml = parser.parseFromString(`
 <catalog>
 	<chien>
-		<lien>cheyenne.html</lien>
 		<photo>cheyenne.jpg</photo>
 		<nom>Cheyenne</nom>
 		<description>
@@ -13,7 +12,6 @@ chienxml = parser.parseFromString(`
 	</chien>
 	
 	<chien>
-		<lien>shadow.html</lien>
 		<photo>shadow.jpg</photo>
 		<nom>Shadow</nom>
 		<description>
@@ -24,7 +22,6 @@ chienxml = parser.parseFromString(`
 	</chien>
 	
 	<chien>
-		<lien>saphyr.html</lien>
 		<photo>saphyr.jpg</photo>
 		<nom>Saphyr</nom>
 		<description>
@@ -35,7 +32,6 @@ chienxml = parser.parseFromString(`
 	</chien>
 	
 	<chien>
-		<lien>diabolo.html</lien>
 		<photo>diabolo.jpg</photo>
 		<nom>Diabolo</nom>
 		<description>
@@ -46,7 +42,6 @@ chienxml = parser.parseFromString(`
 	</chien>
 	
 	<chien>
-		<lien>ruby.html</lien>
 		<photo>ruby.jpg</photo>
 		<nom>Ruby</nom>
 		<description>
