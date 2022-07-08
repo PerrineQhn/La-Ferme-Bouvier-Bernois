@@ -6,10 +6,8 @@ chien = parser.parseFromString(`
 		<xsl:for-each select="chien">
 			<tr>
 				<td class="photo">
-				<a href="{lien}">
-					<img style="width:200px; height:200px;"><xsl:attribute name="src">../resources/pictures/chiens/<xsl:value-of select="photo"/></xsl:attribute>
+					<img style="width:200px; height:200px;"><xsl:attribute name="src">./resources/pictures/chiens/<xsl:value-of select="photo"/></xsl:attribute>
 					</img>
-				</a>
 				</td>
 				<td class="description" style="text-align:justify;">
 					<h4><xsl:value-of select="nom"/></h4>
