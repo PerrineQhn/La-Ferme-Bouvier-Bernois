@@ -75,7 +75,7 @@ div.contact tr th{
 }
 
 div.contact tr td{
-	width: 200px;
+	width: auto;
 	border-left: none;
 	border-right: none;
 	border: none;
