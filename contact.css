@@ -74,10 +74,6 @@ div.contact tr th{
 	border-radius: 25px;
 }
 
-div.contact td {
-	width: 300px;
-}
-
 div.contact tr td{
 	width: auto;
 	border-left: none;
