@@ -104,7 +104,7 @@ div.chiot img{
 }
 
 div.chiot img:hover {
-    width:300px;
+    width:auto;
     height:400px;
     }
 
