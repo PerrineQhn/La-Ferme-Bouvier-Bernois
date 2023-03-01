@@ -103,10 +103,10 @@ div.chiot img{
     justify-content: center;
 }
 
-div.chiot img:hover {
+div.chiot img:hover{
     width:auto;
     height:400px;
-    }
+}
 
 div.chiot td{
     width: 100%;
