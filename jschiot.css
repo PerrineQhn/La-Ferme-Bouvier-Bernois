@@ -103,6 +103,11 @@ div.chiot img{
     justify-content: center;
 }
 
+div.chiot img:hover {
+    width:300px;
+    height:400px;
+    }
+
 div.chiot td{
     width: 100%;
     height: auto;
