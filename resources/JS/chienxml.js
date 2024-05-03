@@ -32,16 +32,6 @@ chienxml = parser.parseFromString(`
 	</chien>
 	
 	<chien>
-		<photo>diabolo.jpg</photo>
-		<nom>Diabolo</nom>
-		<description>
-			<naissance>19 Septembre 2021</naissance>
-			<sexe>Mâle</sexe>
-			<p>Fils de Shadow et Cheyenne. Chien très doux, intelligent et joueur, bien dessiné. Il a hérité de la belle fourrure de sa mère et de l'ossature de son père.</p>
-		</description>
-	</chien>
-	
-	<chien>
 		<photo>ruby.jpg</photo>
 		<nom>Ruby</nom>
 		<description>
