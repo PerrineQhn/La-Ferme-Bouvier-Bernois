@@ -7,7 +7,8 @@ chienxml = parser.parseFromString(`
 		<description>
 			<naissance>17 Juin 2020</naissance>
 			<sexe>Femelle</sexe>
-			<p>Chienne qui a donné naissance à Diabolo, l'un de nos males, elle est bien contruite, mais à malheureusement été stérilisé. Très caline, elle a également une très belle fourrure</p>
+			<p>Chienne qui a donné naissance à Diabolo, l'un de nos mâles, elle est bien construite, mais a malheureusement été stérilisée. Très câline, elle a également une très belle fourrure.</p>
+			<statut>Non LOF</statut>
 		</description>
 	</chien>
 	
@@ -17,7 +18,8 @@ chienxml = parser.parseFromString(`
 		<description>
 			<naissance>29 Août 2020</naissance>
 			<sexe>Mâle</sexe>
-			<p>Père de Diabolo, compacte, bonne ossature. Caractère doux, très attachant, qui demande beaucoup de caresse.</p>
+			<p>Père de Diabolo, compact, bonne ossature. Caractère doux, très attachant, qui demande beaucoup de caresses.</p>
+			<statut>Non LOF</statut>
 		</description>
 	</chien>
 	
@@ -27,7 +29,8 @@ chienxml = parser.parseFromString(`
 		<description>
 			<naissance>23 Juillet 2021</naissance>
 			<sexe>Femelle</sexe>
-			<p>Saphyr est très attachante, joueuse. Très charismatique, c'est une femelle de gros gabarit. Fourrure douce.</p>
+			<p>Saphyr est très attachante, joueuse. Très charismatique, c'est une femelle de gros gabarit avec une fourrure douce.</p>
+			<statut>Non LOF</statut>
 		</description>
 	</chien>
 	
@@ -38,6 +41,7 @@ chienxml = parser.parseFromString(`
 			<naissance>22 Septembre 2021</naissance>
 			<sexe>Femelle</sexe>
 			<p>Femelle très joueuse, très attachante, elle a le plus petit gabarit de notre élevage.</p>
+			<statut>Non LOF</statut>
 		</description>
 	</chien>
 
@@ -48,6 +52,7 @@ chienxml = parser.parseFromString(`
 			<naissance>11 Mars 2024</naissance>
 			<sexe>Femelle</sexe>
 			<p>Femelle très joueuse, très attachante.</p>
+			<statut>LOF</statut>
 		</description>
 	</chien>
 </catalog>
