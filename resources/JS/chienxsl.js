@@ -19,7 +19,7 @@ chien = parser.parseFromString(`
 								<u>Sexe</u> :  <xsl:value-of select="sexe"/>
 							</p>
 							<p>
-								<u>Statut</u> :  <xsl:value-of select="statut"/>
+								<u>Statut</u> : <xsl:value-of select="statut"/>
 							</p>
 							<p>
 								<xsl:value-of select="p"/>
