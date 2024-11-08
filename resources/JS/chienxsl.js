@@ -13,10 +13,10 @@ chien = parser.parseFromString(`
 					<h4><xsl:value-of select="nom"/></h4>
 					<xsl:for-each select="description">
 							<p>
-								<u>Date de naissance</u> :   <xsl:value-of select="naissance"/>
+								<u>Date de naissance</u> : <xsl:value-of select="naissance"/>
 							</p>							
 							<p>
-								<u>Sexe</u> :  <xsl:value-of select="sexe"/>
+								<u>Sexe</u> : <xsl:value-of select="sexe"/>
 							</p>
 							<p>
 								<u>Statut</u> : <xsl:value-of select="statut"/>
