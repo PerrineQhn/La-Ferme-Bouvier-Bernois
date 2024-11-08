@@ -40,5 +40,15 @@ chienxml = parser.parseFromString(`
 			<p>Femelle très joueuse, très attachante, elle a le plus petit gabarit de notre élevage.</p>
 		</description>
 	</chien>
+
+	<chien>
+		<photo>victoire.jpg</photo>
+		<nom>Victoire</nom>
+		<description>
+			<naissance>11 Mars 2024</naissance>
+			<sexe>Femelle</sexe>
+			<p>Femelle très joueuse, très attachante.</p>
+		</description>
+	</chien>
 </catalog>
 `, "text/xml");
