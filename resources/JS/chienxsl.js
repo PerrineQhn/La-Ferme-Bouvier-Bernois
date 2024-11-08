@@ -20,6 +20,7 @@ chien = parser.parseFromString(`
 							</p>
 							<p>
 								<u>Statut</u> :  <xsl:value-of select="statut"/>
+							</p>
 							<p>
 								<xsl:value-of select="p"/>
 							</p>	
