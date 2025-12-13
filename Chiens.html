@@ -1,42 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>La Ferme Bouvier Bernois</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Rochester&family=Satisfy&family=Spectral+SC:ital,wght@1,200&display=swap" rel="stylesheet">
-  <link href="./style.css" type="text/css" rel="stylesheet">
-  <link href="./jschien.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
-	<script src="./resources/JS/chienxml.js"></script>
-	<script src="./resources/JS/chienxsl.js"></script>
-	<script src="./resources/JS/xslttransform.js"></script>
-	<script>
-		function loadXslt(){
-			insertXsl(chienxml, chien, 'chienliste');
-		}
-	</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Chiens - La Ferme Bouvier Bernois</title>
+  <meta name="description" content="Découvrez nos bouviers bernois : Shadow, Cheyenne, Saphyr, Ruby et Victoire.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="./style.css" type="text/css" rel="stylesheet">
+  <script src="./resources/JS/chienxml.js"></script>
+  <script src="./resources/JS/chienxsl.js"></script>
+  <script src="./resources/JS/xslttransform.js"></script>
+  <script>
+    function loadXslt(){
+      insertXsl(chienxml, chien, 'chienliste');
+    }
+  </script>
 </head>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="./index.html">Accueil</a></li>
-      <li><a href="./origines.html">Le Bouvier Bernois</a></li>
-      <li><a href="./Chiens.html">Chiens</a></li>
-      <li><a href="./Chiots.html">Chiots</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-</nav>
-</header>
-
 <body onload="loadXslt()">
-    <h1 class="title">Nos Chiens</h1>
-    <div id="chienliste"></div>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="./index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="./origines.html" class="nav-link">Le Bouvier Bernois</a></li>
+          <li class="nav-item"><a href="./Chiens.html" class="nav-link active">Nos Chiens</a></li>
+          <li class="nav-item"><a href="./Chiots.html" class="nav-link">Nos Chiots</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero moderne -->
+    <section class="hero-modern hero-chiens">
+      <div class="hero-overlay"></div>
+      <div class="hero-image" style="background-image: url('./resources/pictures/Bouviers/banniere.jpg')"></div>
+      <div class="hero-content-modern">
+        <div class="hero-badge">Notre Famille</div>
+        <h1 class="title-modern">Nos Chiens</h1>
+        <p class="subtitle-modern">Rencontrez les membres de notre élevage</p>
+      </div>
+      <!-- <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Contenu chiens -->
+    <section class="presentation-section" style="background: white;">
+      <div class="container" style="max-width: 1200px;">
+        <div id="chienliste"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Découvrez nos chiots</h2>
+          <p>Consultez les portées récentes et à venir</p>
+          <a href="./Chiots.html" class="btn-primary-large">Voir Nos Chiots</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-title"><a href="./index.html" title="Élevage La Ferme Bouvier Bernois" class="affixe">Élevage La Ferme Bouvier Bernois</a></p>
+      <p class="footer-info">SIREN : 903359081</p>
+      <p class="footer-copyright">Les textes et les images sont la propriété exclusive de ce site - Reproduction interdite</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
-<footer>
-    <div id="pied"> 
-      <p><a href="./index.html" title="Élevage La Ferme Bouvier Bernois" class="affixe">Ferme Bouvier Bernois</a></p>
-      <p class="siret">élevage la Ferme Bouvier Bernois - SIREN : 903359081<br>Les textes et les images sont la propriété exclusive de ce site - Reproduction interdite</p>
-      </p> 
-    </div>        
-</footer>
 </html>
