@@ -1,0 +1,36 @@
+{
+  "name": "La Ferme Bouvier Bernois",
+  "short_name": "La Ferme BB",
+  "description": "Élevage familial de Bouviers Bernois en Saône-et-Loire, Bourgogne Franche-Comté. Chiots LOF disponibles.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6d432b",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/resources/pictures/Bouviers/banniere.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["pets", "animals", "breeding"],
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Nos Chiots",
+      "short_name": "Chiots",
+      "description": "Voir les chiots disponibles",
+      "url": "/Chiots.html"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Nous contacter",
+      "url": "/contact.html"
+    }
+  ]
+}

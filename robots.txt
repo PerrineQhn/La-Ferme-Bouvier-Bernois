@@ -1,0 +1,14 @@
+# Règles pour tous les robots
+User-agent: *
+Allow: /
+
+# Bloquer l'accès aux fichiers système et dossiers techniques
+Disallow: /resources/JS/
+Disallow: *.HEIC$
+Disallow: /.DS_Store
+
+# Sitemap
+Sitemap: https://www.lafermebouvierbernois.fr/sitemap.xml
+
+# Crawl-delay (optionnel, pour éviter de surcharger le serveur)
+Crawl-delay: 1
