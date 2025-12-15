@@ -4,6 +4,47 @@
  */
 
 // ============================================
+// BANDEREAU D'ACTUALITÉS - Gestion de la fermeture
+// ============================================
+document.addEventListener('DOMContentLoaded', () => {
+  const newsBanner = document.getElementById('news-banner');
+  const newsClose = document.querySelector('.news-close');
+
+  // Vérifier si le bandereau a déjà été fermé
+  if (localStorage.getItem('newsBannerClosed') === 'true') {
+    newsBanner.classList.add('hidden');
+  }
+
+  // Fermer le bandereau
+  if (newsClose) {
+    newsClose.addEventListener('click', () => {
+      newsBanner.style.animation = 'slideUp 0.3s ease';
+      setTimeout(() => {
+        newsBanner.classList.add('hidden');
+        // Sauvegarder l'état dans localStorage
+        localStorage.setItem('newsBannerClosed', 'true');
+      }, 300);
+    });
+  }
+});
+
+// Animation de fermeture
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+`;
+document.head.appendChild(style);
+
+// ============================================
 // NAVIGATION - Effet sticky avec animation
 // ============================================
 const header = document.querySelector('header');
@@ -67,7 +108,7 @@ navLinks.forEach(link => {
 // ============================================
 // IMAGE - Lazy loading et effet au hover
 // ============================================
-const images = document.querySelectorAll('img');
+const images = document.querySelectorAll('img:not(.review-image)');
 
 images.forEach(img => {
   img.loading = 'lazy';
@@ -134,3 +175,50 @@ if (prefersReducedMotion.matches) {
 // ============================================
 console.log('%c🐕 Élevage La Ferme Bouvier Bernois', 'color: #895737; font-size: 20px; font-weight: bold;');
 console.log('%cSite web moderne et élégant', 'color: #C08552; font-size: 14px;');
+
+// ============================================
+// LIGHTBOX - Affichage des images en grand
+// ============================================
+document.addEventListener('DOMContentLoaded', () => {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.querySelector('.lightbox-close');
+  const reviewImages = document.querySelectorAll('.review-image');
+
+  // Ouvrir la lightbox au clic sur une image
+  reviewImages.forEach(img => {
+    img.addEventListener('click', function() {
+      lightbox.style.display = 'block';
+      lightboxImg.src = this.src;
+      lightboxCaption.textContent = this.alt;
+      // Empêcher le scroll du body
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Fermer la lightbox au clic sur le X
+  lightboxClose.addEventListener('click', () => {
+    closeLightbox();
+  });
+
+  // Fermer la lightbox au clic en dehors de l'image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // Fermer la lightbox avec la touche Échap
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.style.display === 'block') {
+      closeLightbox();
+    }
+  });
+
+  // Fonction pour fermer la lightbox
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
