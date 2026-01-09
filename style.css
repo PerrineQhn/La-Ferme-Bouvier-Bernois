@@ -1848,3 +1848,100 @@ tr.donnees td {
     padding: 15px 0;
   }
 }
+
+/* ============================================
+   SECTION FACEBOOK FEED
+   ============================================ */
+.facebook-section {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #F3E9DC 0%, #F9F5F0 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-section + .facebook-section {
+  padding-top: 70px;
+}
+
+.facebook-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(192, 133, 82, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.facebook-section .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.facebook-section .section-description {
+  color: #666;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+
+.facebook-feed-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(137, 87, 55, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facebook-feed-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(137, 87, 55, 0.15);
+}
+
+.fb-page {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .facebook-section {
+    padding: 60px 15px;
+  }
+
+  .reviews-section + .facebook-section {
+    padding-top: 50px;
+  }
+
+  .facebook-section .section-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .facebook-feed-wrapper {
+    padding: 15px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .facebook-section {
+    padding: 50px 10px;
+  }
+
+  .reviews-section + .facebook-section {
+    padding-top: 40px;
+  }
+
+  .facebook-feed-wrapper {
+    padding: 10px;
+  }
+}
