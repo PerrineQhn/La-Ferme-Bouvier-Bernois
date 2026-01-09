@@ -1890,7 +1890,7 @@ tr.donnees td {
 }
 
 .facebook-feed-wrapper {
-  max-width: 560px;
+  max-width: 500px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
